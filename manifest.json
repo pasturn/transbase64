@@ -1,0 +1,37 @@
+{
+  "name": "TransBase64",
+  "description": "Decode Base64",
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "browser_action": {
+    "default_title": "TransBase64",
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": [
+      "base64.js",
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "all_frames": true,
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ],
+  "icons": { 
+    "16": "icon.png",             
+    "48": "icon.png",            
+    "128": "icon.png" 
+  }, 
+  "permissions": [
+    "<all_urls>",
+    "tabs"
+  ]
+}

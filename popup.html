@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Getting Started Extension's Popup</title>
+<link rel="stylesheet" href="popup.css">
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+      -->
+    <script src="popup.js"></script>
+    <script src="base64.js"></script>
+  </head>
+  <body>
+    <div class="content-wrap">
+      <textarea class="content-field"></textarea>
+      <p class="content-display"></p>
+      <input id="decodeBtn" type="button" value="解析">
+    </div>
+    <script src="custom.js"></script>
+  </body>
+</html>
