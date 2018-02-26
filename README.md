@@ -1,3 +1,3 @@
 # TransBase64
 
-a chrome extesion
+a chrome extension
